@@ -143,6 +143,16 @@ header .textos-header {
     margin-bottom: 10px;
 
 }
+.servi{
+    margin: auto;
+    font-size: 40px;
+    text-align: center;
+    color: #f5a105;
+    font-weight: 600;
+    margin-top: -40px;
+    width: 100%;
+    margin-bottom: 20px;
+}
 .sobre-servicios ul li{
     background-color: #f5a105;
     list-style: none;
@@ -233,7 +243,7 @@ main .sobre-nosotros {
     text-align: justify;
 }
 
-/* COntactos*/
+/* Contactos*/
 
   
   .form {
@@ -483,7 +493,7 @@ main .sobre-nosotros {
     right: 50px;
     opacity: 0.3;
   }
-/*Nuestros Servicios*/
+/*Nuestros Redes*/
 
 .Sobre-Redes {
     padding-bottom: 30px;

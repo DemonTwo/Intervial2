@@ -139,9 +139,10 @@ header .textos-header {
 
 
 .sobre-servicios ul{
+    max-width: 1500px;
     display: flex;
-    margin-bottom: 10px;
-
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .servi{
     margin: auto;
@@ -154,22 +155,27 @@ header .textos-header {
     margin-bottom: 20px;
 }
 .sobre-servicios ul li{
-    background-color: #f5a105;
+    width: 280px;
     list-style: none;
-    padding: 8px 20px;
-    margin: 0px;
+    border-radius: 100px;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     letter-spacing: 1px;
     cursor: pointer;
     text-align: center;
-    color: #eee;
+    color:#f5a105;
     font-weight: 600;
-    border-bottom: 8px solid transparent;
+    border: 4px solid #f5a105;
     transition: all 300ms;
 }
 
 .filter-menu li:hover,
 .filter-menu li.current{
-    background-color: #FDC830;
+    color: #fff;
+    background-color:#f5a105;
 
 }
 .filter-item{
@@ -572,18 +578,9 @@ footer {
 /*Responsive*/
 @media screen and (max-width:1550px){
     .sobre-servicios ul li{
-        border-bottom: 8px solid #FDC830 transparent;
         transition: all 300ms;
     }
-    .filter-menu li:hover,
-.filter-menu li.current{
-    border: none;
-    border-bottom: 8px solid #FDC830;
-    background-color: #FDC830;
-}
-    .filter-menu{
-        flex-direction: column;
-    }
+   
     .filter-item li.active{
         width: 50%;
         padding: 2px;

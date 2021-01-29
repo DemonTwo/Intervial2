@@ -525,6 +525,7 @@ width: 80%;
 }
 
 .redes-ind a{
+    text-decoration: none;
     font-size: 40px;
     color: #f5a105;
     transition: all 300ms;

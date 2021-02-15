@@ -103,6 +103,7 @@ header .textos-header {
 .navbar .logo img {
     margin-left: 20px;
     width: 200px;
+    line-height: 140px;
 }
 
 .menu-list li a {
@@ -664,7 +665,6 @@ footer {
     nav>a {
         margin-right: 5px;
     }
-
     .navbar .menu-list {
         position: fixed;
         top: 0;
@@ -674,9 +674,10 @@ footer {
         max-width: 400px;
         background-color: #151515;
         display: block;
-        padding: 40px 0;
+        padding: 120px 0;
         text-align: center;
         transition: all .5s ease;
+    
     }
 
     .navbar .menu-list.active {
@@ -684,11 +685,12 @@ footer {
     }
 
     .navbar .menu-list li {
-        margin-top: 45px;
+        line-height: 40px;
+        margin-top: 40px;
     }
 
     .navbar .menu-list li a {
-        font-size: 23px;
+        font-size: 20px;
     }
 
     .icon {
@@ -838,9 +840,6 @@ footer {
         text-align: center;
     }
 
-    nav>a {
-        margin-right: 5px;
-    }
 
     .textos-header h1 {
         font-size: 40px;

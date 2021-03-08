@@ -1,13 +1,18 @@
+nav = document.querySelector('.navbar').querySelectorAll('.menu-list');
+console.log(nav);
+
+nav.forEach(element => {
+    element.addEventListener("click", function(){
+        nav.forEach(op=>op.classList.remove("active"))
+        menuBtn.classList.remove("hide");
+    })    
+});
 const navbar = document.querySelector(".navbar");
 const menu = document.querySelector(".menu-list");
 const menuBtn = document.querySelector(".menu-btn");
 const cancelBtn = document.querySelector(".cancel-btn");
 
-const ainicio = document.querySelector(".ini");
-const aserv = document.querySelector(".serv");
-const anos = document.querySelector(".nos");
-const acont = document.querySelector(".cont");
-const aredes = document.querySelector(".red");
+
 menuBtn.onclick = () => {
   menu.classList.add("active");
   menuBtn.classList.add("hide");
@@ -17,27 +22,7 @@ cancelBtn.onclick = () => {
   menuBtn.classList.remove("hide");
 }
 
-/*Coasa Fea*/
-ainicio.onclick = () => {
-  menu.classList.remove("active");
-  menuBtn.classList.remove("hide");
-}
-aserv.onclick = () => {
-  menu.classList.remove("active");
-  menuBtn.classList.remove("hide");
-}
-anos.onclick = () => {
-  menu.classList.remove("active");
-  menuBtn.classList.remove("hide");
-}
-acont.onclick = () => {
-  menu.classList.remove("active");
-  menuBtn.classList.remove("hide");
-}
-aredes.onclick = () => {
-  menu.classList.remove("active");
-  menuBtn.classList.remove("hide");
-}
+
 
 window.onscroll = () => {
   this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
@@ -51,12 +36,14 @@ let sortItem = document.querySelector('.filter-item').children;
 for (let i = 0; i < sortBtn.length; i++) {
   sortBtn[i].addEventListener('click', function () {
     for (let j = 0; j < sortBtn.length; j++) {
+
       sortBtn[j].classList.remove('current');
     }
     this.classList.add('current');
     let targetData = this.getAttribute('data-target');
 
     for (let k = 0; k < sortItem.length; k++) {
+      
       sortItem[k].classList.remove('active');
       sortItem[k].classList.add('delete');
 

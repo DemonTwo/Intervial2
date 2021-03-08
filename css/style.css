@@ -147,7 +147,7 @@ header .textos-header {
 /*Servicios*/
 
 .sobre-servicios ul {
-    max-width: 1500px;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -167,7 +167,7 @@ header .textos-header {
 }
 
 .sobre-servicios ul li {
-    width: 280px;
+    width: 400px;
     list-style: none;
     border-radius: 100px;
     padding: 10px;
@@ -224,13 +224,16 @@ header .textos-header {
 .Info-serv{
     display: none;
     color: #242424;
-    font-size: 30px;
-    text-align: center;
+    font-size: 26px;
+    border-left: 4px solid #ee1818;
+    padding-left: 20px;
+    text-align: justify;
     margin-top: 20px;
     margin-bottom: 20px;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     font-weight: 500;
 }
+
 .Info-serv.delete{
     display: none;
 }
@@ -614,6 +617,9 @@ footer {
 
 /*Responsive*/
 @media screen and (max-width:1550px) {
+    .Info-serv{
+        letter-spacing: 2px;
+    }
     .sobre-servicios ul li {
         transition: all 300ms;
     }
@@ -725,6 +731,7 @@ footer {
         font-size: 25px;
     }
     .Info-serv{
+        letter-spacing: 0.5px;
         font-size: 20PX;
         font-weight: 500;
     }
@@ -855,9 +862,16 @@ footer {
 
   
     /*Servicios*/
+    .Info-serv{
+        letter-spacing:0.1px;
+    }
+    .filter-item li.active {
+        height: 300px;
+    }
     .filter-item li {
         width: 100%;
     }
+
 
     /*Footer*/
 

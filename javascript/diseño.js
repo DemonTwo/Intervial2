@@ -1,4 +1,4 @@
-nav = document.querySelector('.navbar').querySelectorAll('.menu-list');
+nav = document.querySelector('.contenido-nav').querySelectorAll('.menu-list');
 console.log(nav);
 
 nav.forEach(element => {

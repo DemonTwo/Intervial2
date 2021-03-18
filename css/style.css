@@ -691,11 +691,13 @@ footer {
     }
 
     .navbar .menu-list li {
+        
         line-height: 40px;
         margin-top: 40px;
     }
 
     .navbar .menu-list li a {
+        padding: 25px 100px;
         font-size: 20px;
     }
 
